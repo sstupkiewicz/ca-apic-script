@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # cleanup
-rm *.pem *.csr index* serial* > /dev/null > 2&1
+rm *.pem *.csr index* serial* > /dev/null 2>&1
 
 DOMAIN="ibm.example.org"
 SUBJECT_BASE="/C=UK/ST=Hursley/L=IBM/emailAddress=me@me.com"
