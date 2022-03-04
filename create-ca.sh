@@ -24,6 +24,6 @@ for endpoint in ${ENDPOINTS}; do
 	echo -n "."
 	openssl ca -batch -config openssl-ca.cnf -policy signing_policy -extensions signing_req -out ${endpoint}.pem -infiles ${endpoint}.csr > /dev/null 2>&1
 	echo -n "."
-	cp -f serverkey.pem ${endpoint}.key.pem
+	mv -f serverkey.pem ${endpoint}.key.pem
 	echo ". Complete!"
 done
