@@ -4,8 +4,8 @@
 rm *.pem *.csr index* serial* > /dev/null 2>&1
 
 DOMAIN="think.ibm"
-SUBJECT_BASE="/C=UK/ST=Hursley/L=IBM/emailAddress=student@think.ibm"
-ENDPOINTS="admin manager consumer api portal rgw"
+SUBJECT_BASE="/C=US/ST=Columbus/L=IBM/emailAddress=student@think.ibm"
+ENDPOINTS="admin manager consumer api portal rgw datapower"
 SERVER_TPL=openssl-server.cnf
 
 touch index.txt
